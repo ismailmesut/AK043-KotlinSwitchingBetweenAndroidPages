@@ -21,4 +21,11 @@ class ActivityB : AppCompatActivity() {
             startActivity(newIntent)
         }
     }
+
+    override fun onBackPressed() {
+        val newIntent = Intent(Intent.ACTION_MAIN)
+        newIntent.addCategory(Intent.CATEGORY_HOME)
+        newIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        startActivity(newIntent)
+    }
 }
