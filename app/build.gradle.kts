@@ -7,6 +7,10 @@ android {
     namespace = "com.ismailmesutmujde.kotlinswitchingbetweenandroidpages"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.ismailmesutmujde.kotlinswitchingbetweenandroidpages"
         minSdk = 24
