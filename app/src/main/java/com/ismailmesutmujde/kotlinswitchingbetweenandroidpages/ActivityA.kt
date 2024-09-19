@@ -21,4 +21,9 @@ class ActivityA : AppCompatActivity() {
         }
 
     }
+
+    override fun onBackPressed() {
+        //super.onBackPressed()    // deprecated
+        onBackPressedDispatcher.onBackPressed()
+    }
 }
